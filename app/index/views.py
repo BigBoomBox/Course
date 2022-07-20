@@ -7,7 +7,7 @@ index_blueprint = Blueprint('index_blueprint', __name__, template_folder="tools"
 
 @index_blueprint.route("/")
 def index():
-    list_data = get_posts
+    list_data = get_posts()
     return render_template('index.html', content=list_data)
 
 
